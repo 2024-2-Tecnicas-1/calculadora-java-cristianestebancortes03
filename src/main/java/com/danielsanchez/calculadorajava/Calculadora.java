@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Calculadora {
     public static double calcular(int numero1, int numero2, char operacion) {
         double respuesta = 0;
-        switch (operacion) {
+                switch (operacion) {   
             case '+' :
                 // Operación suma:
                 respuesta = numero1 + numero2;
@@ -25,6 +25,14 @@ public class Calculadora {
             case '/' :
                 // Operación división:
                 respuesta = (double) numero1 / numero2;
+                break;
+            case '^' :              
+                // Operación Potencia 
+                respuesta = Math.pow(numero1,numero2);
+                break; 
+            case '%' :
+                // Operacion Modulo 
+                respuesta = numero1 % numero2; 
                 break;
             
             // TODO: DEBES CREAR AQUÍ LOS CASES PARA LA OPERACIÓN DE LA POTENCIA Y EL MÓDULO.
